@@ -58,3 +58,23 @@ body[data-theme="dark"] .car-placeholder{background:linear-gradient(145deg,#303a
 /* Real Wikimedia vehicle photos */
 .car-illustration img.real-car-photo{display:block;width:100%;height:100%;object-fit:cover!important;object-position:center;border-radius:4px}
 .offer-car-photo{object-fit:cover}
+/* Leaflet / OpenStreetMap route map */
+.real-map-card{position:relative;height:460px;min-width:0;overflow:hidden;border:1px solid #e2e7dc;border-radius:7px;background:#e8ece4;box-shadow:0 10px 35px #20291f12}
+#real-map{width:100%;height:100%;min-height:340px;background:#e8ece4}
+.map-pick-controls{position:absolute;z-index:500;top:14px;left:58px;display:flex;gap:7px}
+.map-pick-controls button{padding:10px 12px;border:1px solid #e5e8df;border-radius:5px;background:#fff;color:#283128;font:600 10px Arial;box-shadow:0 2px 8px #20291f24}
+.map-pick-controls button.active{background:#263126;color:#fff}
+.map-note{min-height:32px;padding:9px 11px;border-left:2px solid #a8c951;background:#ffffff80;color:#677060;font-size:10px;line-height:1.55}
+.map-legend span:first-child i{background:#729a37}.map-legend span:last-child i{background:#bb6855}
+.leaflet-control-attribution{font-size:9px!important}
+.map-marker-pin{display:grid;place-items:center;width:29px;height:36px;border:2px solid #fff;border-radius:50% 50% 50% 4px;background:#719539;color:#fff;font:700 12px Arial;box-shadow:0 2px 8px #0004;transform:rotate(-45deg)}
+.map-marker-pin span{transform:rotate(45deg)}
+.map-marker-pin.destination{background:#b85f4d}
+body[data-theme="dark"] .real-map-card,body[data-theme="dark"] #real-map{border-color:#465143;background:#252e25}
+body[data-theme="dark"] .map-note{background:#273027;color:#e8eee0}
+body[data-theme="dark"] .map-pick-controls button{border-color:#465143;background:#252e25;color:#eff2e9}
+body[data-theme="dark"] .map-pick-controls button.active{background:#c9ed75;color:#20291f}
+@media(max-width:760px){.real-map-card{height:390px}.map-pick-controls{left:54px;right:8px;gap:5px}.map-pick-controls button{padding:9px 8px;font-size:9px}}
+@media(max-width:430px){.real-map-card{height:330px}.map-pick-controls{top:10px;left:50px;flex-direction:column;align-items:flex-start}.map-pick-controls button{padding:7px 9px}}
+.map-routing-note{display:block;margin-top:10px;color:#899086;font-size:9px;line-height:1.55}
+body[data-theme="dark"] .map-routing-note{color:#bac3b4}
