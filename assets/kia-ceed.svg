@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img">
+<title>Kia Ceed — ілюстрація автомобіля класу Стандарт</title>
+<defs>
+<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f2f3ef"/><stop offset="1" stop-color="#dfe5dc"/></linearGradient>
+<linearGradient id="paint" x2=".1" y2="1"><stop stop-color="#d6877d"/><stop offset=".45" stop-color="#a03e43"/><stop offset="1" stop-color="#26323a"/></linearGradient>
+<linearGradient id="glass" x2=".2" y2="1"><stop stop-color="#c8e0e8"/><stop offset=".55" stop-color="#7192a1"/><stop offset="1" stop-color="#344b58"/></linearGradient>
+<linearGradient id="road" x2="0" y2="1"><stop stop-color="#d2d9d0"/><stop offset="1" stop-color="#c3cbc2"/></linearGradient>
+</defs>
+<rect width="1200" height="480" fill="url(#bg)"/>
+<path d="M0 295 Q185 269 365 290 T735 284 T1200 276V380H0Z" fill="#edf0e9"/>
+<path d="M0 358H1200V480H0Z" fill="url(#road)"/>
+<path d="M0 370H1200" stroke="#fff" stroke-width="3" opacity=".7"/>
+<ellipse cx="594" cy="350" rx="440" ry="35" fill="#263126" opacity=".18"/>
+<path d="M166 309 L188 269 Q201 254 258 246 L353 229 L420 189 Q451 162 516 160 L704 160 Q767 163 812 204 L850 229 L942 240 Q973 245 988 270 L1004 307 Q1010 323 993 331 L925 340 L243 340 L181 331 Q163 326 166 309Z" fill="url(#paint)" stroke="#303a40" stroke-width="7" stroke-linejoin="round"/>
+<path d="M387 222 L439 180 Q462 168 515 168 L590 168 L590 222Z M610 168 L702 168 Q754 171 790 207 L808 222 L610 222Z" fill="url(#glass)" stroke="#39474d" stroke-width="8" stroke-linejoin="round"/>
+<path d="M595 166V310M813 213L838 310M387 226L355 302M614 225V307" fill="none" stroke="#27343a" stroke-width="5" opacity=".75"/>
+<path d="M198 273Q520 249 815 260T984 282" fill="none" stroke="#fff" stroke-width="5" opacity=".34"/>
+<path d="M235 298H300M918 299H979" stroke="#303a40" stroke-width="7" stroke-linecap="round"/>
+<path d="M346 274h41M662 274h42" stroke="#e8e8da" stroke-width="7" stroke-linecap="round"/>
+<path d="M177 284l35-4-5 21-31 3z" fill="#f5e2a5" stroke="#4b5559" stroke-width="4"/>
+<path d="M968 279l22 7 6 13-24-2z" fill="#e88b69" stroke="#4b5559" stroke-width="4"/>
+<g><circle cx="300" cy="328" r="54" fill="#202629"/><circle cx="300" cy="328" r="34" fill="#aeb7b5"/><circle cx="300" cy="328" r="22" fill="#52616a"/><circle cx="300" cy="328" r="8" fill="#d9ded7"/><circle cx="850" cy="328" r="54" fill="#202629"/><circle cx="850" cy="328" r="34" fill="#aeb7b5"/><circle cx="850" cy="328" r="22" fill="#52616a"/><circle cx="850" cy="328" r="8" fill="#d9ded7"/></g>
+<path d="M177 316Q560 350 993 316" fill="none" stroke="#1e282d" stroke-width="5" opacity=".8"/>
+</svg>
