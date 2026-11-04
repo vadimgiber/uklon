@@ -34,3 +34,24 @@ body[data-theme="dark"] .offer-card,body[data-theme="dark"] .search-empty,body[d
 @media(max-width:520px){.offer-grid{grid-template-columns:1fr}.offers-heading{align-items:flex-start;flex-direction:column;gap:4px}#ride .ride-class,#ride .price-limit{grid-column:span 2}}#ride .ride-class{grid-column:1}#ride .price-limit{grid-column:2}#ride .search-rides-button{grid-column:3/5}.offer-car-photo{width:64px;height:46px;flex:none;object-fit:cover;border-radius:4px;background:#f2f3ef}.offer-car-icon{display:none}
 @media(max-width:760px){#ride .ride-class{grid-column:1}#ride .price-limit{grid-column:2}#ride .search-rides-button{grid-column:1/-1}}
 @media(max-width:520px){#ride .ride-class,#ride .price-limit{grid-column:span 2}.offer-car-photo{width:76px;height:50px}}
+/* Consistent route filters and quick catalog search */
+#ride .ride-class,#ride .price-limit{display:flex;flex-direction:column;justify-content:flex-end;align-self:stretch;gap:6px;min-width:0;min-height:76px;margin:0;color:#899184;font-size:8px;font-weight:700;letter-spacing:.8px;line-height:1.35}
+#ride .ride-class select,#ride .price-limit input{display:block;width:100%;height:48px;min-width:0;flex:none;margin:0;padding:0 12px;border:1px solid #e5e8df;border-radius:5px;background:#fff;color:#273126;font:12px Arial;letter-spacing:normal}
+#ride .ride-class{grid-column:1}#ride .price-limit{grid-column:2}#ride .search-rides-button{grid-column:3/5;align-self:end}
+#ride .ride-class select:focus,#ride .price-limit input:focus,.site-search input:focus{outline:2px solid #b4ce6d;outline-offset:1px}
+.site-search{position:relative;display:flex;align-items:center;flex:0 1 300px;min-width:185px;height:40px;margin:0 16px;padding:0 4px 0 35px;border:1px solid #e5e8df;border-radius:5px;background:#fff}
+.site-search>svg{position:absolute;left:11px;width:16px;height:16px;fill:none;stroke:#78816f;stroke-width:1.8;stroke-linecap:round}
+.site-search input{width:100%;height:36px;min-width:0;padding:0 5px;border:0;background:transparent;font:11px Arial;outline:0}
+.site-search button{flex:none;padding:9px 11px;border-radius:4px;background:#263126;color:#fff;font-size:9px}
+.site-search-status{position:absolute;z-index:5;top:calc(100% + 7px);left:0;display:none;min-width:100%;padding:8px 10px;border:1px solid #e5e8df;border-radius:4px;background:#fff;color:#344033;font-size:10px;box-shadow:0 4px 14px #20291f12}
+.site-search-status:not(:empty){display:block}
+.car-card[hidden]{display:none!important}
+.car-placeholder{display:grid;place-items:center;background:linear-gradient(145deg,#eef1e9,#e2e8d9)!important}
+.car-placeholder span{font-size:54px;filter:grayscale(.45)}
+body[data-theme="dark"] .site-search,body[data-theme="dark"] .site-search-status{background:#252e25;color:#eff2e9;border-color:#465143}
+body[data-theme="dark"] .site-search input{color:#eff2e9}
+body[data-theme="dark"] .car-placeholder{background:linear-gradient(145deg,#303a30,#252e25)!important}
+.offer-car-icon{display:grid;place-items:center;flex:none;width:64px;height:46px;border-radius:4px;background:#f0f3ea;font-size:28px}
+@media(max-width:1000px){.site-search{flex-basis:235px;margin:0 8px}.header-actions{gap:8px}}
+@media(max-width:760px){.site-search{flex:1 1 auto;min-width:140px;margin:0 6px}.site-search button{padding:9px 7px}.site-search input{font-size:10px}#ride .ride-class,#ride .price-limit{min-height:70px}}
+@media(max-width:520px){header{gap:5px}.site-search{min-width:0;height:36px;padding-left:29px}.site-search>svg{left:8px;width:14px}.site-search input{padding:0 2px;font-size:9px}.site-search button{padding:8px 5px;font-size:8px}.header-actions .theme-toggle{display:none}.site-search-status{font-size:9px}#ride .ride-class,#ride .price-limit{min-height:68px}}
