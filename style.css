@@ -84,3 +84,6 @@ body[data-theme="dark"] .map-routing-note{color:#bac3b4}
 
 /* Keep trip search controls aligned and make the primary action full width. */
 #ride>button.search-rides-button{grid-column:1/-1!important;width:100%;justify-self:stretch;min-height:48px;margin-top:2px}#ride .vehicle-filter select{width:100%;height:48px;padding:0 12px;border:1px solid #e5e8df;border-radius:5px;background:#fff;color:#273126;font:12px Arial}#ride .vehicle-filter select:focus{outline:2px solid #b4ce6d;outline-offset:1px}body[data-theme="dark"] #ride .vehicle-filter select{background:#252e25;color:#eff2e9;border-color:#465143}@media(max-width:760px){#ride>button.search-rides-button{grid-column:1/-1!important}}
+
+/* Align all four ride filters to the same label and control baseline. */
+#ride .vehicle-filter,#ride .sort-filter{display:flex;flex-direction:column;justify-content:flex-end;align-self:stretch;gap:6px;min-height:76px;margin:0;line-height:1.35}#ride .vehicle-filter select,#ride .sort-filter select{display:block;flex:none;width:100%;height:48px!important;min-height:48px!important;margin:0;padding:0 12px;border:1px solid #e5e8df;border-radius:5px;background:#fff;color:#273126;font:12px Arial;letter-spacing:normal}body[data-theme="dark"] #ride .vehicle-filter select,body[data-theme="dark"] #ride .sort-filter select{background:#252e25;color:#eff2e9;border-color:#465143}
